@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar (Left Navigation) -->
+      <nav id="sidebar" class="col-md-2 d-none d-md-block bg-white vh-100 p-3 border-end">
+        <div>
+          <div class="mb-3 logo">
+            <img src="images/Logo.svg" alt="Logo" class="img-fluid" />
+          </div>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-3">
+              <a href="#" class="nav-link active" id="dashboard-link">
+                <img src="images/SquaresFour.svg" alt="Dashboard Icon" /> Dashboard
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="#" class="nav-link">
+                <img src="images/calender.svg" alt="Reservation Icon" /> Reservation
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="#" class="nav-link">
+                <img src="images/home.svg" alt="Rooms Icon" /> Rooms
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="#" class="nav-link">
+                <img src="images/message.svg" alt="Messages Icon" /> Messages
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="#" class="nav-link">
+                <img src="images/house-keeping.svg" alt="Housekeeping Icon" /> Housekeeping
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="#" class="nav-link">
+                <img src="images/inventory.svg" alt="Inventory Icon" /> Inventory
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="#" class="nav-link">
+                <img src="images/calender-2.svg" alt="Calendar Icon" /> Calendar
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="#" class="nav-link">
+                <img src="images/financial.svg" alt="Financials Icon" /> Financials
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="#" class="nav-link">
+                <img src="images/reviews.svg" alt="Reviews Icon" /> Reviews
+              </a>
+            </li>
+            <li class="nav-item mb-3">
+              <a href="#" class="nav-link">
+                <img src="images/concierg.svg" alt="Concierge Icon" /> Concierge
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="promo-section mt-auto">
+          <div class="text-center mb-3">
+            <img src="images/OBJECTS.svg" alt="Promo Image" class="img-fluid" style="max-height: 120px;" />
+          </div>
+          <h6 class="text-center text-dark fw-bold mb-2">Elevate Hospitality Standards</h6>
+          <p class="text-center text-muted small mb-3">
+            Enhanced Reporting, Faster Check-Ins, & Integrated Marketing Tools
+          </p>
+          <button class="btn btn-promo w-100 fw-bold">Update Now</button>
+        </div>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="col-md-10 bg-gray-bg">
+        <!-- Header Section (Now containing Dashboard, Search, Profile, Notifications) -->
+        <header class="d-flex justify-content-between align-items-center p-3 bg-white border-bottom">
+          <!-- Left side (Dashboard Title + Search Box) -->
+          <div class="d-flex align-items-center w-50"> <!-- w-50 to take up half space -->
+            <h5 class="m-0 text-dark fw-bold">Dashboard</h5>
+            <!-- Search Box -->
+            <div class="input-group ms-3">
+              <span class="input-group-text bg-white border-end-0">
+                <img src="images/search.svg" alt="Search Icon" />
+              </span>
+              <input
+                type="text"
+                class="form-control border-start-0"
+                placeholder="Search room, guest, book, etc"
+                aria-label="Search"
+              />
+            </div>
+          </div>
+        
+          <!-- Right side (User Profile, Settings, Notifications) -->
+          <div class="d-flex align-items-center gap-4 w-50 justify-content-end"> <!-- w-50 to take up half space -->
+            <!-- User Profile -->
+            <div class="d-flex align-items-center">
+              <img
+                src="images/user.png"
+                alt="Profile Picture"
+                class="rounded-circle me-2"
+                width="40"
+                height="40"
+              />
+              <div class="text-start">
+                <p class="m-0 fw-bold text-dark">Jaylon Dorwart</p>
+                <small class="text-muted">Admin</small>
+              </div>
+            </div>
+        
+            <!-- Settings Icon -->
+            <a href="#" class="fs-4 text-dark">
+              <img src="images/settings.svg" alt="Settings Icon" />
+            </a>
+        
+            <!-- Notification Icon -->
+            <a href="#" class="position-relative">
+              <img src="images/notifications.svg" alt="Notifications Icon" />
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                3
+              </span>
+            </a>
+          </div>
+        </header>
+        
+        
+
+        <!-- Dashboard Content (Main Body) -->
+        <div class="p-3">
+          <div class="row">
+           <!-- Summary Cards -->
+          <div class="col-md-3 col-6 mb-3">
+            <div class="card shadow-sm p-3 bg-lime-subtle position-relative">
+              <div class="card-body">
+                <h6 class="fw-bold text-dark">New Bookings</h6>
+                <h2 class="fw-bold text-lime-dark">840</h2>
+                <small class="text-muted">
+                  <i class="bi bi-arrow-up text-success"></i> +8.70% from last week
+                </small>
+                <!-- Right side Icon with Background Color -->
+                <div class="position-absolute top-50 end-0 translate-middle-y bg-lime-dark text-white rounded-circle p-2">
+                  <img src="images/calender-2.svg" alt="Calendar Icon" width="30" height="30">
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-md-3 col-6 mb-3">
+              <div class="card shadow-sm p-3">
+                <div class="card-body">
+                  <h6 class="fw-bold text-dark">Check-in</h6>
+                  <h2 class="fw-bold text-lime-dark">231</h2>
+                  <small class="text-muted">
+                    <i class="bi bi-arrow-up text-success"></i> +3.56% from last week
+                  </small>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 mb-3">
+              <div class="card shadow-sm p-3">
+                <div class="card-body">
+                  <h6 class="fw-bold text-dark">Check-out</h6>
+                  <h2 class="fw-bold text-danger">124</h2>
+                  <small class="text-muted">
+                    <i class="bi bi-arrow-down text-danger"></i> -1.06% from last week
+                  </small>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 mb-3">
+              <div class="card shadow-sm p-3">
+                <div class="card-body">
+                  <h6 class="fw-bold text-dark">Total Revenue</h6>
+                  <h2 class="fw-bold text-lime-dark">$123,980</h2>
+                  <small class="text-muted">
+                    <i class="bi bi-arrow-up text-success"></i> +5.70% from last week
+                  </small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-3">
+              <div class="card p-3 h-100 widget-room-availability">
+                <h5 class="card-title">Room Availability</h5>
+                <svg width="253" height="56" viewBox="0 0 253 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_19_964)">
+                  <rect width="160.04" height="56" fill="#D5F6E5"/>
+                  <rect x="164.04" width="53.13" height="56" fill="#F3FBC7"/>
+                  <rect x="221.17" width="20.24" height="56" fill="#E7F68E"/>
+                  <rect x="245.41" width="7.59" height="56" fill="#CCD97E"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_19_964">
+                  <rect width="253" height="56" rx="8" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+                  
+                <div class="row mt-3">
+                  <div class="col">
+                    <div class="bg-light rounded p-3">
+                      <p class="mb-0">Occupied</p>
+                      <h3 class="mb-0">286</h3>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="bg-light rounded p-3">
+                      <p class="mb-0">Reserved</p>
+                      <h3 class="mb-0">87</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col">
+                    <div class="bg-light rounded p-3">
+                      <p class="mb-0">Available</p>
+                      <h3 class="mb-0">32</h3>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="bg-light rounded p-3">
+                      <p class="mb-0">Not Ready</p>
+                      <h3 class="mb-0">13</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8 mt-3">
+                <!-- Revenue Chart -->
+                <div class="card shadow-sm p-3">
+                  <div class="card-body">
+                    <h6 class="fw-bold text-dark">Revenue</h6>
+                    <canvas id="lineChart" style="width: 100%; height: 300px;"></canvas>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <!-- Booking Platform Breakdown (Pie Chart) -->
+    <div class="col-md-8 mt-3">
+      <div class="card shadow-sm p-3">
+        <div class="card-body">
+          <h6 class="fw-bold text-dark">Booking Platform Breakdown</h6>
+          <canvas id="barChart" style="width: 100%; height: 300px;"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mt-3">
+      <div class="card shadow-sm p-3">
+        <div class="card-body">
+          <h6 class="fw-bold text-dark">Booking Platform Breakdown</h6>
+          <canvas id="pieChart" style="width: 100%; height: 300px;"></canvas>
+        </div>
+      </div>
+    </div>
+    
+            </div>
+          </div>
+          <div class="container mt-5">
+            <!-- Heading and Search/Filter Row -->
+            <div class="row mb-4 align-items-center">
+                <!-- Left side: Booking List Heading -->
+                <div class="col-md-8">
+                    <h5 class="m-0">Booking List</h5>
+                </div>
+        
+                <!-- Right side: Search and Status Filter -->
+                <div class="col-md-4 d-flex justify-content-end gap-3">
+                    <!-- Search Input -->
+                    <input type="text" class="form-control" placeholder="Search guest, status, etc" style="max-width: 250px;">
+                    
+                    <!-- Status Filter -->
+                    <select class="form-select" style="max-width: 200px;">
+                        <option value="all">All Status</option>
+                        <option value="checked-in">Checked-In</option>
+                        <option value="pending">Pending</option>
+                        <option value="cancelled">Cancelled</option>
+                    </select>
+                </div>
+            </div>
+        
+            <!-- Booking Table -->
+            <div class="table-responsive mt-3">
+              <table class="table table-striped">
+                  <thead>
+                      <tr>
+                          <th scope="col">Booking ID</th>
+                          <th scope="col">Guest Name</th>
+                          <th scope="col">Room Type</th>
+                          <th scope="col">Room Number</th>
+                          <th scope="col">Duration</th>
+                          <th scope="col">Check-In & Check-Out</th>
+                          <th scope="col">Status</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>LG-B00108</td>
+                          <td>Angus Copper</td>
+                          <td>
+                              <span class="badge bg-light text-dark">Deluxe</span>
+                          </td>
+                          <td>Room 101</td>
+                          <td>3 nights</td>
+                          <td>June 19, 2028 - June 22, 2028</td>
+                          <td>
+                              <span class="badge bg-success">Checked-In</span>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>LG-B00109</td>
+                          <td>Sarah Connor</td>
+                          <td>
+                              <span class="badge bg-light text-dark">Standard</span>
+                          </td>
+                          <td>Room 102</td>
+                          <td>2 nights</td>
+                          <td>June 20, 2028 - June 22, 2028</td>
+                          <td>
+                              <span class="badge bg-warning text-dark">Pending</span>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>LG-B00110</td>
+                          <td>John Doe</td>
+                          <td>
+                              <span class="badge bg-light text-dark">Suite</span>
+                          </td>
+                          <td>Room 103</td>
+                          <td>5 nights</td>
+                          <td>June 21, 2028 - June 26, 2028</td>
+                          <td>
+                              <span class="badge bg-danger">Cancelled</span>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>  
+        </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/Chart.js"></script>
+</html>

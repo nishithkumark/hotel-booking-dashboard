@@ -1,0 +1,117 @@
+:root {
+  --light-green: #D5F6E5;
+  --lime-dark: #CCD97E;
+  --gray-bg: #F8F8F8;
+  --red: #FD2424;
+}
+  #sidebar {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+ 
+  .nav-link {
+    font-size: 16px;
+    color: #0D0E0D;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-link img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+  .nav-link:hover {
+    color: #0D0E0D;
+  }
+  
+  #dashboard-link.active {
+    background-color: #E7F68E;
+    color: #0D0E0D;
+    border-radius: 8px;
+  }
+
+  .promo-section {
+    background-color: #D5F6E5;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .promo-section img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .promo-section h6 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .promo-section p {
+    font-size: 14px;
+    color: var(--muted-text);
+  }
+  
+  .promo-section .btn-promo {
+    background-color: #E7F68E;
+    color: var(--dark-text);
+    border: none;
+    font-size: 14px;
+    padding: 10px 0;
+  }
+  
+  .promo-section .btn-promo:hover {
+    background-color: #d0ec89;
+    cursor: pointer;
+  }
+.logo img{
+  width: 160px;
+  height: 45px;
+}
+.bg-lime-subtle{
+  background-color: #D5F6E5;
+}
+
+/* Widget Room Availability */
+.widget-room-availability {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 16px;
+
+  width: 285px;
+  height: 264px;
+
+  background: #FFFFFF;
+  border-radius: 12px;
+
+  /* Bootstrap equivalent settings */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.widget-room-availability .card-title {
+  font-size: 1.25rem; /* Adjust as needed */
+  font-weight: bold;
+}
+
+.widget-room-availability .row {
+  display: flex;
+  gap: 16px; /* Creates gap between columns */
+}
+
+.widget-room-availability .col {
+  flex: 1; /* Ensures each column is evenly spaced */
+}
+
+.widget-room-availability .bg-light {
+  background-color: #f8f9fa !important; /* Ensure the background is light */
+}
+
+
+  
